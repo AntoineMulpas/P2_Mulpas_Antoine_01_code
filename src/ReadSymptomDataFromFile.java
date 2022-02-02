@@ -8,11 +8,12 @@ import java.util.List;
  * CLASS TO READ THE FILE AND ADD THE SYMPTOMS IN AN ARRAYLIST
  *
  */
+
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 
     @Override
-    public List<String> GetSymptoms(String filepath) {
+    public List<String> getSymptoms(String filepath) {
         ArrayList<String> result = new ArrayList<>();
 
         if (filepath != null) {
@@ -34,3 +35,5 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
     }
 
 }
+
+
