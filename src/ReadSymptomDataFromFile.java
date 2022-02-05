@@ -11,10 +11,15 @@ import java.util.List;
 
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
+    /**
+     *
+     * @param filepath
+     * @return an ArrayList of all Symptoms obtained from a data source, duplicates are possible/probable
+     */
 
     @Override
     public List<String> getSymptoms(String filepath) {
-        ArrayList<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
 
         if (filepath != null) {
             try {
@@ -30,10 +35,8 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
                 e.printStackTrace();
             }
         }
-
         return result;
     }
-
 }
 
 
